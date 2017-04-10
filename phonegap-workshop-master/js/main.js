@@ -21,7 +21,7 @@ var app = {
                 $('body').html(new EmployeeView(employee).render().el);
             });
         }
-    }
+    },
 
     registerEvents: function(){
         var self = this;
