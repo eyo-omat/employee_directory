@@ -14,12 +14,12 @@ var HomeView = function(store){
         console.log('findByName');
         store.findByName($('.search-key').val(), function(employees) {
            $('.employee-list').html(HomeView.liTemplate(employees));
-            if(self.iScroll){
+            if(self.iscroll){
                 console.log('Refresh iScroll');
-                self.iScroll.refresh();
+                self.iscroll.refresh();
             } else {
                 console.log('New iScroll');
-                self.iScroll = new iScroll($('.scroll', self.el)[0], {hScrollbar: false, vScrollbar: false});
+                self.iscroll = new iScroll($('.scroll', self.el)[0], {hScrollbar: false, vScrollbar: false});
             }
         });
     };

@@ -1,6 +1,7 @@
 var app = {
 
     showAlert: function(message, title){
+        console.log("about to show alert...");
         if (navigator.notification){
             navigator.notification.alert(message, null, title, 'OK');
         } else {
