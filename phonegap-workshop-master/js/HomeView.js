@@ -1,4 +1,5 @@
 var HomeView = function(store){
+
     this.initialize = function(){
         this.el = $('<div />');
         this.el.on('keyup', '.search-key', this.findByName);
